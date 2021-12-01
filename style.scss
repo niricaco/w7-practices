@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+
+  background: transparent;
+
+  font-family: inherit;
+  
+  text-decoration: none;
+}
+
+ol,
+ul,
+li {
+  list-style:none;
+  display:block;
+}
+
+table {
+  border-collapse:collapse;
+  border-spacing:0
+}
+
+a img {
+  border: none
+}
+
+button,
+a {
+  cursor: pointer;
+  color: inherit
+}
+
+textarea {
+  resize: none
+}
+
+button,
+input,
+textarea,
+select {
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  border-radius: 0
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  background-color: #c0ca33;
+}
+
+#root {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+#form {
+  border: 5px solid #4db6ac;
+  border-radius: 15px;
+  width: fit-content;
+  height: fit-content;
+  margin: 5px;
+  
+  div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    margin: 5px;
+    
+    label {
+      margin-right: 5px;
+    }
+    
+    input {
+      border: 2px solid #4db6ac;
+      border-radius: 5px;
+      padding: 2px;
+    }
+
+    select {
+      border: 2px solid #4db6ac;
+      border-radius: 5px;
+      padding: 2px;
+    }
+    
+    input:focus {
+      border: 4px solid #4db6ac;
+      padding: 0px;
+    }
+
+    input[type="checbox"] {
+      height: 25px;
+      width: 25px;
+    }
+    
+    select {
+      padding: 5px;
+      border: 2px solid #4db6ac;
+    }
+
+    select:focus {
+      padding: 3px;
+      border: 4px solid #4db6ac;
+    }
+    
+  }
+  
+  button {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 4px solid #4db6ac;
+    border-radius: 5px;
+    padding: 2px 8px 2px;
+    margin: 5px;
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  button:focus {
+    border: 6px solid #4db6ac;
+    padding: 0px 6px 0px;
+  }
+
+  div:nth-child(-n+3) input {
+    width: 60%;
+  }
+
+  div:nth-child(4) input {
+    width: 25px;
+    height: 25px;
+  }
+
+  div:nth-child(4) input:checked {
+    background-color: #4db6ac;
+  }
+  
+  div:nth-child(5) input {
+    width: 25px;
+    height: 25px;
+  }
+
+  div:nth-child(5) input:checked {
+    background-color: #4db6ac;
+  }
+}
+
+/* 
+Richárd Atom10:20
+1. kellő távolság legyen a beviteli mezők között
+2. elég nagy legyen az input mező
+3. label ne legyen egy sorban az inputtal
+Richárd Atom10:22
+4. label és az input össze legyen kötve (lást label for="")
+Richárd Atom10:23
+5. minden képernyőméreten ugyanúgy használható legyen
+Richárd Atom10:24
+6.rendezett legyen legyen egy vonalban
+7. lehessen tabolni (ha formban van benne akkor lehet)
+8. logikus sorrend legyen
+Richárd Atom10:26
+9. aktuális input mező kiemelkedjen
+10. gomb legyen hangsúlyos
+Richárd Atom10:27
+11. legyen megnevezve a form
+Richárd Atom10:29
+absolute
+100% x 100% 
+z-index:
+Richárd Atom10:32
+opactiy: 0
+Richárd Atom10:33
+https://www.w3schools.com/tags/att_for.asp
+Richárd Atom10:35
+https://www.w3schools.com/tags/att_input_required.asp
+https://www.web4college.com/css/web4-css-input-pseudo-classes.php
+valid
+invalid
+Richárd Atom10:40
+1. kellő távolság legyen a beviteli mezők között
+1. kellő távolság legyen a beviteli mezők között és a mezőkben
+2. elég nagy legyen az input mező
+3. label ne legyen egy sorban az inputtal
+4. label és az input össze legyen kötve (lást label for="")
+5. minden képernyőméreten ugyanúgy használható legyen
+6.rendezett legyen legyen egy vonalban
+7. lehessen tabolni (ha formban van benne akkor lehet)
+8. logikus sorrend legyen
+9. aktuális input mező kiemelkedjen
+10. gomb legyen hangsúlyos
+11. legyen megn
+12. fontválasztás
+*/
